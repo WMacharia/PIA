@@ -6,7 +6,7 @@ function ClassAutoload($ClassName){
 
     foreach($directories AS $dir){
         $FileName = dirname(__FILE__) . DIRECTORY_SEPARATOR . $dir . DIRECTORY_SEPARATOR . $ClassName . '.php';
-        if(is_readable($FileName)){
+        if(file_exists($FileName) AND is_readable($FileName)){
             require $FileName;
         }
     }
@@ -20,6 +20,13 @@ $objlayouts = new layouts();
 //require_once "structure/menus.php";
 
 $objmenus = new menus();
+$obj = new fnc();
+$objContents = new contents();
+
+require "includes/constants.php";
+require "includes/dbConnection.php";
+
+$conn = new dbConnection(DBTYPE , HOSTNAME, DBPORT, HOSTUSER, HOSTPASS, DBNAME);
 
 //print"me";
 
