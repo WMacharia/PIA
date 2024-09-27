@@ -75,3 +75,11 @@ if (count($users) > 0) {
 ?>
 </body>
 </html>
+//require db 
+//sql stmt
+//put values in array
+//echo table headers
+//echo table rows and details
+//echo string instead of numbers
+//add css 
+//
