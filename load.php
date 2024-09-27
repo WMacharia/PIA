@@ -1,4 +1,8 @@
 <?php
+
+require "includes/constants.php";
+require "includes/dbConnection.php";
+
 //class autoload
 
 function ClassAutoload($ClassName){
@@ -20,13 +24,14 @@ $objlayouts = new layouts();
 //require_once "structure/menus.php";
 
 $objmenus = new menus();
-$obj = new fnc();
+//$obj = new fnc();
 $objContents = new contents();
+$Objforms = new forms();
 
-require "includes/constants.php";
-require "includes/dbConnection.php";
+//require "includes/constants.php";
+//require "includes/dbConnection.php";
 
-$conn = new dbConnection(DBTYPE , HOSTNAME, DBPORT, HOSTUSER, HOSTPASS, DBNAME);
+//$conn = new dbConnection(DBTYPE , HOSTNAME, DBPORT, HOSTUSER, HOSTPASS, DBNAME);
 
 //print"me";
 

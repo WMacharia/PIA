@@ -21,3 +21,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
+//require db 
+//declare variables
+//sql stmt 
+//echo value(verify sql stmt) 
+//hash password
+//
+//
+//
