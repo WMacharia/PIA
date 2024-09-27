@@ -46,4 +46,31 @@ class dbConnection{
             break;
         }
     }
+
+    public function insert($table, $data){
+        ksort($data);
+        $fileDetails = NULL;
+        $fieldNames = implode('', '', array_keys($data));
+        $fieldValues = implode('', '', array_values($data));
+        $sth = "INSERT INTO $table ('$fieldNames') VAUES ('$fieldValues')";
+
+        switch($this->db_type){
+            case 'MySQLi' :
+                if($this->connection->query($sth) --- TRUE){
+                    return TRUE;
+                }else{
+                    return  "ERROR: " .$sth. "<br>". $this->connection->error;
+                }
+                break;
+                
+        }
+    }
 }
+//define constants
+//construct fxn
+//connection fxn
+//switch mysqli
+//switch pdo
+//mysqli if fxn
+//pdo try catch
+//*load???
