@@ -12,7 +12,7 @@
         <form method="POST" action="signup.php">
             <div class="form-group">
                 <label for="fullname">Full Name</label>
-                <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter Full Name" required>
+                <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter Full Name" required autofocus maxlength="">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
@@ -56,4 +56,12 @@
         </form>
     </div>
 </body>
+//form itself
+//drop down gender
+//drop down role
+//add div
+//add classes
+//action to php
+//
+//add css
 </html>
