@@ -1,7 +1,8 @@
 <?php
 require_once "load.php";
-$objlayouts->heading();
-$objmenus->main_menu();
-$objContents->main_content();
-$objContents->sidebar();
-$objlayouts->footer();
+$ObjLayouts->heading();
+$ObjMenus->main_menu();
+$ObjLayouts->banner();
+$ObjContents->about_content();
+$ObjContents->sidebar();
+$ObjLayouts->footer();
