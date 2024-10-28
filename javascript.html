@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="startTime()">
+<!--Javascript at the bottom. If at the top the page will take longer to load-->
+    <p>Hello world!</p>
+    
+    <button onclick="document.getElementById('MyImg').src = 'bulbon.jpg'">Turn On</button>
+    <img src="bulbon.jpg" id="MyImg" alt="" boder="0" content-align="left" width="100px" height=""size/>
+
+    <button onclick="document.getElementById('MyImg').src = 'bulboff.jpg'">Turn Off</button>
+    <p id="demo"></p>
+    
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JS";
+
+        document.getElementById("demo").style.fontSize = "35px";
+
+        document.getElementById("demo").style.display = "none";
+    </script>
+    <br>
+    <script>document.write("Goodmorning")</script>
+    <br>
+    <script>document.write(5+4)</script>
+    <br>
+    <button onclick="document.write(24+26)">Compute</button>
+    <br>
+    <br>
+
+    <!-- <script>
+        window.alert("Connection Successful!");
+    </script> -->
+    <br>
+    <br>
+
+    <!--Possibility 5-->
+    <a href="" onclick="return confirm('Are you sure?');">Delete</a>
+    <br>
+    <br>
+
+    <!--Possiblity 6-->
+    <script>
+        console.log(9*5);
+    </script>
+
+    <script>
+        var age = 13;
+        var continent = 'Africa';
+        const course = 'ICS';
+        document.write('I am ' + age + ' I live in ' + continent + ' and I study ' + course + '.');
+    </script>
+    <br>
+    <br>
+
+    <!-- <script>
+        const username = prompt('What is your name?');
+
+       if(username.length > 6){
+        const message = `Hello ${username} <br> I am happy to introduce you to JS.`;
+        document.write(message);
+        }else{
+            document.write(username + ' must have more than 6 characters.');
+        }
+    </script> -->
+    <br>
+    <br>
+    <script>
+        function calcSum(r,t){
+            return (r+t)*2;
+        }
+        document.write(calcSum(4,6));
+    </script>
+    <br>
+    <br>
+    <script>
+        function startTime(){
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+
+            h = addZero(h);
+            m = addZero(m);
+            s = addZero(s);
+
+            document.getElementbyId('tmr').innerHTML = h + ":" + m + ":" + s;
+            t = setTimeout('startTime()', 500);
+        }
+
+        function addZero(z){
+            if(z<10){
+                z = "0" + z;
+                return z;
+            }
+        }
+    </script>
+    <p id="tmr"></p>
+    <br>
+    <br>
+
+    <a href = "#" onclick="MyFunc()" >Click Here</a>
+    <p id="tictac"></p>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
